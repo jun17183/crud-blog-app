@@ -2,11 +2,17 @@
 header {
     display: flex;
     justify-content: space-between;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     padding: 10px 40px;
     min-height: 40px;
     border-bottom: 1px solid #f2f2f2;
     align-items: center;
+}
+
+header .header__logo {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
 }
 
 header a {
@@ -24,6 +30,7 @@ header a:hover {
 .post__navigation {
     display: flex;
     gap: 12px;
+    padding: 48px 20px 0 20px;
     margin: 0 auto;
     max-width: 680px;
     font-size: 16px;
@@ -36,8 +43,9 @@ header a:hover {
     color: black;
 }
 
-/* post list */
-.post__list {
+/* post list, post detail */
+.post__list,
+.post__detail {
     padding: 20px 40px;
     margin: 0 auto;
     min-height: 90vh;
@@ -54,7 +62,7 @@ header a:hover {
 .post__box {
     padding-top: 24px;
     padding-bottom: 24px;
-    border-top: 1px sold #f2f2f2;
+    border-top: 1px solid #f2f2f2;
 }
 
 .post__profile-box {
@@ -102,6 +110,73 @@ header a:hover {
 
 .post__edit:hover,
 .post__edit:focus {
+    color: black;
+}
+
+/* post detail */
+.post__detail .post__title {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.post__detail .post__utils-box {
+    flex-direction: row;
+    padding: 10px 0px;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.post__detail .post__profile-box {
+    padding: 10px 0px;
+}
+
+.post__detail .post__text {
+    padding: 20px 0px;
+}
+
+/* profile */
+.profile__box {
+    display: flex;
+    gap: 18px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 680px;
+    font-size: 18px;
+    text-align: left;
+    line-height: 24px;
+}
+
+.flex__box-lg {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.profile__image {
+    width: 72px;
+    height: 72px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+}
+
+.profile__name {
+    padding-top: 4px;
+    font-size: 16px;
+}
+
+.profile__email {
+    font-weight: 500;
+}
+
+.profile__logout {
+    font-size: 14px;
+    color: gray;
+}
+
+.profile__logout:hover,
+.profile__logout:focus {
     color: black;
 }
 
