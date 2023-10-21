@@ -1,4 +1,4 @@
-import Router from "./components/Router";
+import Router from "components/Router";
 import { Link } from "react-router-dom";
 
 function App() {
