@@ -57,6 +57,9 @@ footer a:hover {
     padding: 48px 20px 0 20px;
     margin: 0 auto;
     max-width: 680px;
+}
+
+.post__navigation div {
     font-size: 16px;
     color: gray;
     cursor: pointer;
@@ -208,6 +211,7 @@ footer a:hover {
 .profile__logout {
     font-size: 14px;
     color: gray;
+    cursor: pointer;
 }
 
 .profile__logout:hover,
@@ -322,6 +326,7 @@ ul.carousel__slides input {
     background-color: #fff;
     opacity: 0.5;
     margin: 10px;
+    cursor: pointer;
 }
   
 input:checked + .carousel__slide-container .carousel__slide-img {
@@ -385,7 +390,7 @@ input:checked + .carousel__slide-container .nav label {
     line-height: 1.5;
 }
 
-.form__btn--submit {
+.form .form__btn--submit {
     float: right;
     padding: 10px 10px;
     margin: 0 auto;
@@ -396,7 +401,49 @@ input:checked + .carousel__slide-container .nav label {
     cursor: pointer;
 }
 
-.form__btn--submit:hover,
-.form__btn--submit:focus {
+.form .form__btn--submit:hover,
+.form .form__btn--submit:focus {
     background-color: #1945a4;
+}
+
+/* login form */
+.form--lg {
+    min-height: 70vh;
+    margin-top: 10vh;
+}
+
+.form__title {
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.form__link {
+    margin-left: 10px;
+    text-decoration: none;
+    color: gray;
+}
+
+.form__link:hover,
+.form__link:focus {
+    color: black;
+}
+
+.form__error {
+    color: red;
+}
+
+/* loader */
+.loader {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 5px solid #2563eb;
+    border-radius: 50%;
+    z-index: 9999;
+    animation: rotation 1s linear infinite;
 }
