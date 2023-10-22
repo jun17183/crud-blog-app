@@ -14,16 +14,16 @@ function App() {
   // auth를 체크하기 전(initialize 전)에 loader를 띄워주는 용도
   const [init, setInit] = useState<boolean>(false);
   // auth의 currentUser가 있으면 true로 변경
-  const [isAuthenticated, setIsAuthentiated] = useState<boolean>(
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(
     !!auth?.currentUser
   );
 
   useEffect(() => {
-    onAuthStateChanged(auth, user => {
+    onAuthStateChanged(auth, (user) => {
       if (user) {
-        setIsAuthentiated(true);
+        setIsAuthenticated(true);
       } else {
-        setIsAuthentiated(false);
+        setIsAuthenticated(false);
       }
       setInit(true);
     });
