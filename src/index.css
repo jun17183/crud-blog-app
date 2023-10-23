@@ -397,6 +397,7 @@ input:checked + .carousel__slide-container .nav label {
     height: 48px;
     width: 100%;
     background-color: #2463eb;
+    font-weight: ;
     color: white;
     cursor: pointer;
 }
